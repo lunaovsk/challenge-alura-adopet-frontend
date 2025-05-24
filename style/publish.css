@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --cor-primaria: #2ED6A6;
+    --cor-secundaria: #FF6B6B;
+    --cor-texto: #324B81;
+    --cor-link: #3B5BDB;
+    --cor-fundo: #FFFFFF;
+    --cor-input: #F5F7FA;
+    --cor-borda-input: #A5D8FF;
+    --cor-decorativa: #FFE8CC;
+    --cor-hover-botao: #FF4D4D;
+  
+    --fonte-principal: 'Poppins', 'Nunito', sans-serif;
+    --raio-borda: 12px;
+  }
+  

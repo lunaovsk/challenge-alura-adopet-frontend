@@ -1,0 +1,99 @@
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoPet</title>
+    <link rel="shortcut icon" href="/asheet/Vector.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/auth-account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body> 
+    <header>
+        <nav class="containerHeader">
+            <a class="containerHeaderAdoPet" href="/index.html"><img src="/asheet/Logo.svg" class="imgLogo"></a>
+            <a class="containerHeaderHome" href="/pagesFeed/feed.html"><img src="/asheet/Casa.svg" class="imgHome"></a>
+            <a class="containerHeaderMsg" href="/pagesFeed/mensage.html"><img src="/asheet/Mensagens.svg" class="imgMsn"></a>
+        </nav>
+    </header>
+    <main>
+        <img src="/asheet/Logo copy.svg" alt="logo adopet" class="imgAdopet">
+        <p class="cadastroP1">Ainda não tem cadastro?</p>
+        <p class="cadastroP2">Então, antes de buscar seu melhor amigo, precisamos de alguns dados</p>
+        <form id="formCadastro" method="POST">
+            <div class="containerForm">
+                <input required type="text" name="nome" id="nome">
+                <label for="nome">Nome</label>
+            </div>
+            <div class="containerForm">
+                <input required placeholder="example@example.com" type="email" name="login" id="login">
+                <label for="login">E-mail</label>
+            </div>
+            <div class="containerForm">
+                <input type="tel" id="telefone" required placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}">
+                <label for="telefone">Telefone</label>
+            </div>
+            <div class="containerLocation">
+                <div class="containerFormLocation">    
+                    <select id="estado" name="estado" required>
+                        <option value="" disabled selected></option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                    <label for="estado" class="labelLocation">Estado</label>               
+                </div>
+                <div class="containerFormLocation">
+                    <input required type="text" name="cidade" id="cidade" class="inputCidade">
+                    <label for="cidade" class="labelLocation">Cidade</label>
+                </div>
+            </div>
+            <div class="containerForm">
+                <input required type="password" name="senha" id="senha" class="passwordInput">
+                <label for="senha">Senha</label>                 
+            </div>
+            <div id="passwordFeedback" class="passwordFeedback"></div>
+            <div class="containerForm">
+                <input required type="password" name="confirmarSenha" id="confirmeSenha" class="passwordInput">
+                <label for="confirmeSenha">Confirme sua senha</label>    
+            </div>
+            <div class="containerSubmitRegister">
+                <button type="submit" id="register" class="submitButton">Cadastrar!</button>
+            </div>
+        </form>
+    </main>
+    <div class="containerPatas">
+        <img src="/asheet/Patas.png" alt="patinhas de animais" class="imgPatas">
+    </div>
+    <div class="containerImg">
+        <img src="/asheet/Forma 2.svg" alt="background" class="imgFlexEnd">
+    </div>
+    <footer>
+        <p class="footerParagrafo">2025 - Page developed by <a href="https://luna15-br.github.io/matheusLuna/index.html" target="_blank" class="myLink">Matheus Luna</a></p>
+    </footer>   
+    <script type="module" src="/script/register.js"></script>
+</body>
+</html>

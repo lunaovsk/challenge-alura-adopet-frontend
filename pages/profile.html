@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - AdoPet</title>
+    <link rel="shortcut icon" href="/asheet/Vector.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/auth-account.css">
+    <link rel="stylesheet" href="/style/profile-account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body onload="buscarDados()"> 
+    <header>
+        <nav class="containerHeader">
+            <a class="containerHeaderAdoPet" href="/index.html"><img src="/asheet/Logo.svg" class="imgLogo" alt="Logo AdoPet"></a>
+            <a class="containerHeaderHome" href="/pagesFeed/feed.html"><img src="/asheet/Casa.svg" class="imgHome" alt="Home"></a>
+            <a class="containerHeaderMsg" href="/pagesFeed/mensage.html"><img src="/asheet/Mensagens.svg" class="imgMsn" alt="Mensagens"></a>
+        </nav>
+    </header>
+    
+    <main>
+        <p class="paragrafoPerfil">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+        <h2>Perfil</h2>
+        
+        <form id="formProfile" class="formProfile">
+            <div class="containerInput"><p class="pPhoto">Foto</p></div>
+            <div class="containerImgProfile">
+                <label for="imageUpload" class="uploadBtn">
+                    <img src="/asheet/Usuário.png" alt="Foto de perfil" class="imgPerfil" id="profileImage">
+                </label>
+                <input type="file" id="imageUpload" accept="image/*" style="display: none">
+            </div>
+            <p class="clickPhoto">Clique na foto para editar</p>
+            <div class="containerInput">
+                <label for="nomePerfil">Nome</label>
+                <input type="text" id="nomePerfil" name="nomePerfil" readonly>
+            </div>
+            <div class="containerInput">
+                <label for="telPerfil">Telefone</label>
+                <input type="tel" id="telPerfil" name="telPerfil" readonly>
+            </div>
+            <div class="containerInput">
+                <label for="cidadePerfil">Cidade</label>
+                <input type="text" id="cidadePerfil" name="cidadePerfil" readonly>
+            </div>
+            <div class="containerInput">
+                <label for="estadoPerfil">Estado</label>
+                <input type="text" id="estadoPerfil" name="estadoPerfil" readonly>
+            </div>
+            <div class="containerInput">
+                <label for="aboutProfile">Sobre</label>
+                <textarea id="aboutProfile" name="sobre" readonly></textarea>
+            </div>
+        </form>
+        
+        <div class="containerButton">
+            <button type="button" class="fetchButton" id="editButton">Editar</button>
+        </div>
+    </main>
+    
+    <div class="containerImg">
+        <img src="/asheet/Forma 2.svg" alt="background" class="imgFlexEnd">
+    </div>
+    
+    <footer>
+        <p class="footerParagrafo">2025 - Page developed by <a href="https://luna15-br.github.io/matheusLuna/index.html" target="_blank" class="myLink">Matheus Luna</a></p>
+    </footer>
+    
+    <script src="/script/dataProfile.js"></script>
+    <script src="/script/alterPhoto.js"></script>
+</body>
+</html>

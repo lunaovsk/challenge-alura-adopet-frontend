@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopet - Feed</title>
+    <link rel="shortcut icon" href="/asheet/Vector.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/auth-account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/style/feed.css">
+</head>
+<body>
+    <header>
+        <nav class="containerHeader">
+            <a class="containerHeaderAdoPet" href="/index.html"><img src="/asheet/Logo.svg" class="imgLogo"></a>
+            <a class="containerHeaderMsg" href="/pagesFeed/mensage.html"><img src="/asheet/Mensagens.svg" class="imgMsn"></a>
+        </nav>
+    </header>
+        <main>
+        <h1>Olá! Veja os amigos disponíveis para adoção!</h1>
+        <section id="petsContainer">
+            <div class="feedPets" dataExamplePet>
+                <img for="imageUpload" class="uploadBtn" src="/asheet/pets/Imagens animais-09 1 (1).png" alt="Foto de pet" class="imgPet">
+                <div class="infosPet">
+                    <input type="text" id="nomePet1" class="petInfoInput petInfoInputName" value="Dunga" readonly>
+                    <input type="text" id="agePet1" class="petInfoInput" value="2 anos" readonly>
+                    <input type="text" id="portePet1" class="petInfoInput" value="Porte pequeno" readonly>
+                    <input type="text" id="tipoPet1" class="petInfoInput petInfoInputTipo" value="Calmo e educado" readonly>
+                    <div class="contato">
+                        <input type="text" id="cidadePerfil1" class="petInfoInput" value="Rio de Janeiro" readonly>
+                        <input type="text" id="estadoPerfil1" class="petInfoInput" value="(RJ)" readonly>
+                    </div>
+                    <div class="contato">
+                        <img class="iconeMsn" src="/asheet/ícone mensagem.svg" alt="">
+                        <a class="enviarMsn" href="/pages/msn.html">Falar com responsável</a>
+                    </div>
+                </div>
+            </div>
+            <div class="feedPets" data-example-pet>
+                <img for="imageUpload" class="uploadBtn" src="/asheet/pets/Imagens animais-09 2 (1).png" alt="Foto de pet" class="imgPet">
+                <div class="infosPet">
+                    <input type="text" id="nomePet2" class="petInfoInput petInfoInputName" value="Felícia" readonly>
+                    <input type="text" id="agePet2" class="petInfoInput" value="3 meses" readonly>
+                    <input type="text" id="portePet2" class="petInfoInput" value="Porte pequeno" readonly>
+                    <input type="text" id="tipoPet2" class="petInfoInput petInfoInputTipo" value="Ativa e carinhosa" readonly>
+                    <div class="contato">
+                        <input type="text" id="cidadePerfil2" class="petInfoInput" value="Nova Iguaçu" readonly>
+                        <input type="text" id="estadoPerfil2" class="petInfoInput" value="(RJ)" readonly>
+                    </div>
+                    <div class="contato">
+                        <img class="iconeMsn" src="/asheet/ícone mensagem.svg" alt="">
+                        <a class="enviarMsn" href="/pages/msn.html">Falar com responsável</a>
+                    </div>
+                </div>
+            </div>
+            <div class="feedPets" data-example-pet>
+                <img for="imageUpload" class="uploadBtn" src="/asheet/pets/Imagem - sirius.png" alt="Foto de pet" class="imgPet">
+                <div class="infosPet">
+                    <input type="text" id="nomePet3" class="petInfoInput petInfoInputName" value="Sirius" readonly>
+                    <input type="text" id="agePet3" class="petInfoInput" value="6 meses" readonly>
+                    <input type="text" id="portePet3" class="petInfoInput" value="Porte grande" readonly>
+                    <input type="text" id="tipoPet3" class="petInfoInput petInfoInputTipo" value="Ativo e educado" readonly>
+                    <div class="contato">
+                        <input type="text" id="cidadePerfil3" class="petInfoInput" value="Duque de Caxias" readonly>
+                        <input type="text" id="estadoPerfil3" class="petInfoInput" value="(RJ)" readonly>
+                    </div>
+                    <div class="contato">
+                        <img class="iconeMsn" src="/asheet/ícone mensagem.svg" alt="">
+                        <a class="enviarMsn" href="/pages/msn.html">Falar com responsável</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="pagination" class="pagination"></div>
+    </main>
+    <div class="profileUser">
+        <a href="/pages/profile.html" class="botao-perfil"><img src="/asheet/Usuário.png" alt="perfil" class="imgPefil"></a>
+    </div>
+    <div class="containerImg">
+        <img src="/asheet/Forma 2.svg" alt="background" class="imgFlexEnd">
+    </div>
+    <footer>
+        <p class="footerParagrafo">2025 - Page developed by <a href="https://luna15-br.github.io/matheusLuna/index.html" target="_blank" class="myLink">Matheus Luna</a></p>
+    </footer>   
+<script src="/script/dataPets.js"></script>
+</body>
+</html>
